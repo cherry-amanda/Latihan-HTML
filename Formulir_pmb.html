@@ -4,6 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulir Pendaftaran Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+ 
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+ 
+        h2 {
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 10px;
+        }
+ 
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+ 
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+ 
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+ 
+        button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 20px;
+        }
+ 
+        button:hover {
+            background-color: #1557b0;
+        }
+ 
+        p {
+            margin-bottom: 15px;
+        }
+ 
+        select {
+            background-color: white;
+        }
+ 
+        .radio-group {
+            display: inline-block;
+        }
+ 
+        .radio-group label {
+            width: auto;
+            margin-right: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -30,7 +112,7 @@
                     <option value="Teknologi Rekayasa Manufaktur">Teknologi Rekayasa Manufaktur</option>
                 </select>
             </p>
-            <hr/>
+ 
             <p>
                 <label for="nama">Nama Lengkap:</label>
                 <input type="text" id="nama" name="nama" required>
@@ -76,7 +158,6 @@
             <p>
                 <button type="submit">Daftar</button>
             </p>
-             
         </form>
     </div>
 </body>
